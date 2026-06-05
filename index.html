@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Server Slotter</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body>
+
+<div class="search-bar">
+    <input id="serverInput" placeholder="Enter server IP (e.g. donutsmp.net)" />
+    <button onclick="searchServer()">Search</button>
+</div>
+
+<div class="container">
+    <div class="card">
+        <h1 id="serverName">Server Slotter</h1>
+        <div class="ip" id="ip"></div>
+
+        <div class="motd" id="motd">Loading MOTD...</div>
+
+        <div class="status-wrapper">
+            <div class="status-dot" id="statusDot"></div>
+            <div class="status" id="status">Checking...</div>
+        </div>
+
+        <div class="players" id="players"></div>
+
+        <ul id="playerList"></ul>
+    </div>
+</div>
+
+<div class="footer-bottom-left">
+    <div><a href="https://namemc.com/profile/WheresWallie.1" target="_blank" rel="noopener noreferrer">Creaed by WheresWallie</a></div>
+    <div><a href="https://github.com/kennydrift/ServerSlotter" target="_blank" rel="noopener noreferrer">View on github</a></div>
+</div>
+
+<script src="src/index.js"></script>
+</body>
+</html>

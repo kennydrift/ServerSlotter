@@ -1,0 +1,192 @@
+/* Background - Cool, Dark Minecraft Landscape */
+body {
+    margin: 0;
+    font-family: "Pixelify Sans", monospace;
+
+    background-image: url('background.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+    color: #333333;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    width: 520px;
+    padding: 30px;
+    /* Classic MC GUI Gray */
+    background: #c6c6c6; 
+    /* 3D Border Effect */
+    border: 4px solid;
+    border-color: #ffffff #555555 #555555 #ffffff; 
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
+    animation: fadeIn 0.7s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 600;
+    color: #333333;
+    text-shadow: 2px 2px #888888;
+}
+
+.ip {
+    margin-top: 6px;
+    font-size: 18px;
+    color: #555555;
+}
+
+.motd {
+    margin-top: 18px;
+    padding: 14px;
+    background: #000000;
+    border: 4px solid;
+    border-color: #555555 #ffffff #ffffff #555555;
+    font-size: 18px;
+    color: #aaaaaa;
+    text-shadow: 2px 2px #000000;
+}
+
+.status-wrapper {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.status-dot {
+    width: 14px;
+    height: 14px;
+    background: gray;
+    border: 2px solid #333;
+}
+
+.status {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.players {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #333333;
+    font-weight: 600;
+}
+
+ul {
+    margin-top: 16px;
+    padding: 0;
+    list-style: none;
+    height: 30vh;
+    
+    overflow: scroll;
+}
+
+
+li {
+    background: #c6c6c6;
+    border: 3px solid;
+    border-color: #ffffff #555555 #555555 #ffffff;
+    margin-bottom: 10px;
+    transition: 0.1s ease;
+    
+}
+
+li:hover {
+    background: #90b3ff; /* Subtle blue tint on hover */
+    border-color: #ffffff #373737 #373737 #ffffff;
+}
+
+.player-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 12px;
+    text-decoration: none;
+    color: #333333;
+    font-size: 18px;
+    font-weight: 600;
+    width: 100%;
+    box-sizing: border-box;
+}
+img {
+    width: 32px;
+    height: 32px;
+    border: 2px solid #333;
+    image-rendering: pixelated;
+}
+
+.search-bar {
+    position: absolute;
+    top: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.search-bar input {
+    width: 360px;
+    padding: 10px;
+    font-family: "Pixelify Sans", monospace;
+    font-size: 16px;
+
+    background: #000;
+    color: #aaaaaa;
+
+    border: 4px solid;
+    border-color: #555555 #ffffff #ffffff #555555;
+    outline: none;
+}
+
+.search-bar button {
+    padding: 10px 16px;
+    font-family: "Pixelify Sans", monospace;
+    font-size: 16px;
+
+    background: #c6c6c6;
+    cursor: pointer;
+
+    border: 4px solid;
+    border-color: #ffffff #555555 #555555 #ffffff;
+}
+
+.search-bar button:active {
+    border-color: #555555 #ffffff #ffffff #555555;
+}
+
+.footer-bottom-left {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    font-family: 'Pixelify Sans', sans-serif; /* Keeps the font consistent */
+    font-size: 14px;
+    line-height: 1.5;
+    z-index: 1000;
+}
+
+.footer-bottom-left a {
+    color: white;
+    text-decoration: underline;
+}
+
+.footer-bottom-left a:hover {
+    opacity: 0.9;
+}
